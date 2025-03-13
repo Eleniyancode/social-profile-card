@@ -122,7 +122,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-inline: 20px;
+  padding-inline: 30px;
 }
 
 /* card */
@@ -164,7 +164,7 @@ img {
   /* flex-direction: column; */
   /* margin: auto; */
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   /* border: 2px dotted teal; */
   /* justify-content: center; */
   /* align-items: center; */
