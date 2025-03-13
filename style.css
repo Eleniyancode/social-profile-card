@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* body */
+body {
+  width: 100%;
+  border: 4px dotted darkolivegreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  background-image:  url(./images/bg-pattern-bottom.svg), url(./images/bg-pattern-top.svg);
+  background-position: 250px 350px, -150px -150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* main */
+main {
+  width: 100%;
+  max-width: 60em;
+  /* border: 2px dotted lawngreen; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* card */
+
+.card {
+  width: 100%;
+  max-width: 25em;
+  /* border: 2px dotted hotpink; */
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 150px 250px;
+}
+
+.top-empty-section {
+  background: url(./images/bg-pattern-card.svg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  /* padding: 5px; */
+  border-radius: 50%;
+  margin: auto;
+  margin-top: -50px;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.card-details {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* margin: auto; */
+  text-align: center;
+  margin-bottom: 30px;
+  /* border: 2px dotted teal; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: -5px;
+}
+
+.city {
+  margin-top: 0px;
+  color: hsl(0, 0%, 59%);
+}
+
+.card-info {
+  display: flex;
+  /* border: 2px dotted teal; */
+  justify-content: space-around;
+  /* padding: 20px; */
+  text-align: center;
+}
+
+
+
+p {
+  color: hsl(229, 23%, 23%);
+}
+
+.bottom-content-section {
+  background-color: white;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.name {
+  font-size: 1.5em;
+  font-weight: 700;
+
+}
+
+.value {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+span {
+  color: hsl(227, 10%, 46%);
+  font-size: 1em;
+}
+
+.value-info {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+@media (min-width: 40em) {
+  body {
+    background-image: url(./images/bg-pattern-bottom.svg), url(./images/bg-pattern-top.svg);
+    background-position: 800px 350px, -20px -250px;
+    background-size: contain;
+  }
+}
